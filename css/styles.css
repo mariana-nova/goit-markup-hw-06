@@ -681,7 +681,8 @@ address {
 }
 .button-modal-close {
   position: relative;
-  left: 500px;
+  left: 494px;
+  top: 7px;
   padding: 4px 8px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -735,7 +736,9 @@ address {
   line-height: 30px;
   margin-right: 10px;
   align-items: center;
+  display: flex;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   width: 200px;
@@ -755,7 +758,6 @@ address {
 .icon-enviar-cono {
   fill: #ffffff;
   margin-left: 20px;
-  margin: auto;
   width: 24px;
   height: 24px;
 }
@@ -791,6 +793,13 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(33, 33, 33, 1);
+  padding-left: 40px;
+}
+.info-window:focus-visible {
+  outline: var(--brand-color) solid 1px;
+}
+.info-window:hover + .form-icons {
+  fill: var(--brand-color);
 }
 .form-icons {
   position: relative;
@@ -801,9 +810,6 @@ address {
   position: absolute;
   left: 15px;
   transform: translateY(-210%);
-}
-.form-icons:hover {
-  fill: var(--brand-color);
 }
 
 .window-modal-comment {
@@ -890,6 +896,9 @@ address {
   letter-spacing: 0.01em;
   padding-top: 12px;
   padding-left: 20px;
+}
+.modal-coment:focus-visible {
+  outline: var(--brand-color) solid 1px;
 }
 .modal-coment:hover {
   border-color: var(--brand-color);
